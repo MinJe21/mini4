@@ -107,7 +107,7 @@ int loadData(Menu *s){
     return i;
 }
 
-void searchName(Score *s, int count){
+void searchName(Menu *s, int count){
     int scnt = 0;
     char search[20];
 
