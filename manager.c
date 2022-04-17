@@ -115,10 +115,10 @@ void searchName(Menu *s, int count){
     scanf("%s", search);
 
     for(int i=0; i < count; i++){
-        if(s[i].Kor == -1) continue;
+        if(s[i].price == -1) continue;
         if(strstr(s[i].name, search)){
             printf("%2d", i+1);
-            readScore(s[i]);
+            readMenu(s[i]);
             scnt++;
         }
     }
