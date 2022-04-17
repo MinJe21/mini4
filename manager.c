@@ -107,6 +107,26 @@ int loadData(Menu *s){
     return i;
 }
 
+void searchName(Score *s, int count){
+    int scnt = 0;
+    char search[20];
+
+    printf("검색할 이름?:");
+    scanf("%s", search);
+
+    for(int i=0; i < count; i++){
+        if(s[i].Kor == -1) continue;
+        if(strstr(s[i].name, search)){
+            printf("%2d", i+1);
+            readScore(s[i]);
+            scnt++;
+        }
+    }
+    if(scnt == 0) printf("=> 검색된 데이터 없음!");
+    printf("\n");
+}
+
+
 int selectMenu(){
     int menu;
     printf("\n*** 과일택배배송 ***\n");
