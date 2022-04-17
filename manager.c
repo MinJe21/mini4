@@ -135,6 +135,7 @@ int selectMenu(){
     printf("3. 메뉴수정\n");
     printf("4. 메뉴삭제\n");
     printf("5. 메뉴저장\n");
+    printf("6. 이름검색\n");
     printf("0. 종료\n\n");
     printf("=> 원하는 메뉴는? ");
     scanf("%d", &menu);
