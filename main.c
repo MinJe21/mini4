@@ -50,6 +50,9 @@ int main(){
         else if(menu == 5){
             saveData(slist, index);
         }
+	else if(menu == 6){
+            searchName(slist, index);
+	}
     }
     printf("종료됨!\n");
     return 0;
