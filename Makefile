@@ -11,4 +11,6 @@ $(DTARGET): $(OBJECTS)
 
 clean:
 	rm *.o manager
+	
+	
 
