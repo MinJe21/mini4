@@ -22,3 +22,4 @@ void saveData(Menu *s, int count);//파일저장
 int loadData(Menu *s);//파일불러오기
 
 int selectMenu();//기본 메뉴바
+
